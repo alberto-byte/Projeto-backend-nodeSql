@@ -1,14 +1,15 @@
 const Enrollments = require('../models/Enrollment');
 const Classes = require('../models/Classes');
 
+
 const getEnrollments = async (req, res)=>{
-    try {
-        const enrollements = await Enrollments.findAll();
-        res.json(enrollements);
-      } catch (error) {
-        console.error(error);
-        res.status(500).send('Server Error');
-      }
+  try {
+      const enrollements = await Enrollments.findAll();
+      res.json(enrollements);
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Server Error');
+    }
 }
 
 const addEnrollment = async (req, res)=>{

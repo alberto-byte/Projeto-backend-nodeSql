@@ -39,6 +39,12 @@ app.use('/instructors', VerifyJWT, instructorsRoutes);
 app.use('/students', VerifyJWT, studentsRoutes);
 app.use('/classes', VerifyJWT, classesRoutes);
 
+// app.use('/courses', coursesRoutes);
+// app.use('/enrollments', enrollmentsRoutes);
+// app.use('/instructors', instructorsRoutes);
+// app.use('/students', studentsRoutes);
+// app.use('/classes', classesRoutes);
+
 app.use('/login', authenticationRoutes);
 app.use('/logout', authenticationRoutes);
 
